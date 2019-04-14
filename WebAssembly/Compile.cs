@@ -289,7 +289,7 @@ namespace WebAssembly
                                         if (!signature.Equals(functionImport.Type))
                                             throw new CompilerException($"{moduleName}::{fieldName} did not match the required type signature of {signature}.");
 
-                                        functionImports.Add(functionImport.Method);
+                                        functionImports.Add(functionImport.Function.Method);
                                         functionImportTypes.Add(signature);
                                         break;
 

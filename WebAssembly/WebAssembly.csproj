@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-		<TargetFrameworks>netstandard1.4;net45</TargetFrameworks>
+		<TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
 		<Title>WebAssembly for .NET</Title>
 		<PackageVersion>0.3.7-preview</PackageVersion>
 		<Authors>Ryan Lamansky</Authors>
@@ -23,16 +23,16 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
     <TreatSpecificWarningsAsErrors />
-    <DocumentationFile>bin\Release\netstandard1.4\WebAssembly.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\netstandard2.0\WebAssembly.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
     <TreatSpecificWarningsAsErrors />
-    <DocumentationFile>bin\Debug\netstandard1.4\WebAssembly.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\netstandard2.0\WebAssembly.xml</DocumentationFile>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard1.4'">
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
     <PackageReference Include="System.Reflection.Emit" Version="4.3.0" />
   </ItemGroup>
 
